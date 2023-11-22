@@ -88,9 +88,12 @@ public class PalavreadoTest {
         assertEquals(bigText.expectedCountOfWordsWithOneToFiveLetters, palavreado.countWordsWithOneToFiveLetters());
     }
 
-    // @Test
-    // public void testCountLetterJ() {
-    // // Use a known text for testing
-    // assertEquals(expectedCountOfLetterJ, palavreado.countLetterJ());
-    // }
+    @Test
+    public void testCountLetterJ() {
+        palavreado.ingestText(smallText.text);
+        assertEquals(smallText.expectedCountOfLetterJ, palavreado.countLetterJ());
+
+        palavreado.ingestText(bigText.text);
+        assertEquals(bigText.expectedCountOfLetterJ, palavreado.countLetterJ());
+    }
 }

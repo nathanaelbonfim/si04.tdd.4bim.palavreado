@@ -50,4 +50,16 @@ public class Palavreado {
 
         return count;
     }
+
+    public int countLetterJ() {
+        int count = 0;
+
+        for (int i = 0; i < text.length(); i++) {
+            if (text.charAt(i) == 'j' || text.charAt(i) == 'J') {
+                count++;
+            }
+        }
+
+        return count;
+    }
 }
