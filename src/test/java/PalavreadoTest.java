@@ -40,7 +40,7 @@ public class PalavreadoTest {
             501,
             3339,
             2833,
-            275,
+            254,
             2);
 
     @Test
@@ -79,12 +79,14 @@ public class PalavreadoTest {
         assertEquals(bigText.expectedCharacterCountWithoutSpaces, palavreado.countCharactersWithoutSpaces());
     }
 
-    // @Test
-    // public void testCountWordsWithOneToFiveLetters() {
-    // // Use a known text for testing
-    // assertEquals(expectedCountOfWordsWithOneToFiveLetters,
-    // palavreado.countWordsWithOneToFiveLetters());
-    // }
+    @Test
+    public void testCountWordsWithOneToFiveLetters() {
+        palavreado.ingestText(smallText.text);
+        assertEquals(smallText.expectedCountOfWordsWithOneToFiveLetters, palavreado.countWordsWithOneToFiveLetters());
+
+        palavreado.ingestText(bigText.text);
+        assertEquals(bigText.expectedCountOfWordsWithOneToFiveLetters, palavreado.countWordsWithOneToFiveLetters());
+    }
 
     // @Test
     // public void testCountLetterJ() {

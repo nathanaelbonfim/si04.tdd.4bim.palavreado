@@ -33,4 +33,22 @@ public class Palavreado {
         return textWithoutSpaces.length();
     }
 
+    public Object countWordsWithOneToFiveLetters() {
+        int count = 0;
+        String[] words = text.split(" ");
+
+        // desconsidera espaços em branco
+        words = java.util.Arrays.stream(words).map(s -> s.trim()).toArray(String[]::new);
+
+        for (int i = 0; i < words.length; i++) {
+            boolean isOneToFiveLetters = words[i].length() >= 1 && words[i].length() <= 5;
+
+            if (isOneToFiveLetters) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
 }
