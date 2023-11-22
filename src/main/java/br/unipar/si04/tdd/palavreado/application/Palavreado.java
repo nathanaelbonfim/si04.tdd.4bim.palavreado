@@ -26,5 +26,11 @@ public class Palavreado {
     public Object countCharacters() {
         return text.length();
     }
-    
+
+    public Object countCharactersWithoutSpaces() {
+        String textWithoutSpaces = text.replaceAll(" ", "");
+
+        return textWithoutSpaces.length();
+    }
+
 }

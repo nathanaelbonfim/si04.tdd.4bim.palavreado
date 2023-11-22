@@ -70,12 +70,14 @@ public class PalavreadoTest {
         assertEquals(bigText.expectedCharacterCount, palavreado.countCharacters());
     }
 
-    // @Test
-    // public void testCountCharactersWithoutSpaces() {
-    // // Use a known text for testing
-    // assertEquals(expectedCharacterCountWithoutSpaces,
-    // palavreado.countCharactersWithoutSpaces());
-    // }
+    @Test
+    public void testCountCharactersWithoutSpaces() {
+        palavreado.ingestText(smallText.text);
+        assertEquals(smallText.expectedCharacterCountWithoutSpaces, palavreado.countCharactersWithoutSpaces());
+    
+        palavreado.ingestText(bigText.text);
+        assertEquals(bigText.expectedCharacterCountWithoutSpaces, palavreado.countCharactersWithoutSpaces());
+    }
 
     // @Test
     // public void testCountWordsWithOneToFiveLetters() {
