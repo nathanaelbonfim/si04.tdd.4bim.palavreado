@@ -33,7 +33,7 @@ public class Palavreado {
         return textWithoutSpaces.length();
     }
 
-    public Object countWordsWithOneToFiveLetters() {
+    public int countWordsWithOneToFiveLetters() {
         int count = 0;
         String[] words = text.split(" ");
 
@@ -50,5 +50,4 @@ public class Palavreado {
 
         return count;
     }
-
 }
