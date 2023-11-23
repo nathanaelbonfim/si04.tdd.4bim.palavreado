@@ -4,9 +4,11 @@ Este projeto foi desenvolvido utilizando a metodologia TDD (Test-Driven Developm
 ## Organização do Projeto
 O projeto está organizado em pacotes, onde cada pacote tem uma responsabilidade específica no sistema.
 
-`br.unipar.si04.tdd.palavreado`: Este é o pacote principal que contém a classe Main.java. Esta classe é responsável por iniciar a aplicação.
+[`br.unipar.si04.tdd.palavreado`](src/main/java/br/unipar/si04/tdd/palavreado/Main.java): Este é o pacote principal que contém a classe Main.java. Esta classe é responsável por iniciar a aplicação.
 
-`br.unipar.si04.tdd.palavreado.application`: Este pacote contém a classe Palavreado.java que é responsável por realizar as operações de contagem de palavras, caracteres, entre outras.
+[`br.unipar.si04.tdd.palavreado.application`](src/main/java/br/unipar/si04/tdd/palavreado/application/Palavreado.java): Este pacote contém a classe Palavreado.java que é responsável por realizar as operações de contagem de palavras, caracteres, entre outras.
+
+[`br.unipar.si04.tdd.palavreado.tests`](src/test/java/PalavreadoTest.java): Este pacote contém os testes unitários do projeto.
 
 ## Como usar
 Para usar este projeto, você precisa inserir uma URL quando solicitado. O programa irá então buscar o conteúdo da URL e realizar uma série de operações, como contagem de palavras, caracteres, etc.
