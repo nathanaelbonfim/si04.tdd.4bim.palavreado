@@ -3,6 +3,13 @@ package br.unipar.si04.tdd.palavreado.application;
 public class Palavreado {
     private String text;
 
+    public Palavreado() {
+    }
+
+    public Palavreado(String string) {
+        this.ingestText(string);
+    }
+
     public void ingestText(String string) {
         text = string;
     }
